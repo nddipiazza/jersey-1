@@ -138,6 +138,13 @@ public final class ApacheClientProperties {
      */
     public static final String REQUEST_CONFIG = "jersey.config.apache.client.requestConfig";
 
+    /**
+     * RedirectStrategy which can customize how redirects are handled.
+     * <p/>
+     * The value MUST be a subclass of {@link RedirectStrategy}.
+     */
+    public static final String REDIRECT_STRATEGY = "jersey.config.apache.client.redirectStrategy";
+
     private ApacheClientProperties() {
         // prevents instantiation
     }
